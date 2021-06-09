@@ -9,6 +9,7 @@ public abstract class Car {
     super();
     this.type = type;
     this.transmission = transmission;
+    specificConstruct();
   }
 
   public CarType getType() {

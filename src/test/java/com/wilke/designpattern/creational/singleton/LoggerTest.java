@@ -13,5 +13,7 @@ public class LoggerTest {
     Logger loggerB = Logger.getInstance();
 
     assertThat(loggerA).isEqualTo(loggerB);
+    
+    Logger.getInstance().log("something");
   }
 }

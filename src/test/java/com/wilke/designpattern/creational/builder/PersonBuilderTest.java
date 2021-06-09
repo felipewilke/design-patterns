@@ -10,19 +10,15 @@ public class PersonBuilderTest {
   @Test
   void shouldBuildPerson() {
 
-    // Avoid complex constructor
-    /* Person joao = new Person("joao silva", null, 20, null, "51999999", null);
-    Person maria =
-        new Person("maria santos", "mariasantos@email.com", null, 1, null, "street abc 123");
-    Person carlos = new Person("carlos pires", null, null, null, null, null);*/
-
     Person joao = new Person.PersonBuilder("joao silva").age(20).phone("51999999").build();
+
     Person maria =
         new Person.PersonBuilder("maria santos")
             .email("mariasantos@email.com")
             .children(1)
             .address("street abc 123")
             .build();
+
     Person carlos = new Person.PersonBuilder("carlos pires").build();
 
     assertAll(

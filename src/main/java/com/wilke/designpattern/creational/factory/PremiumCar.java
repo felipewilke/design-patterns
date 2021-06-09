@@ -4,7 +4,6 @@ public class PremiumCar extends Car {
 
   public PremiumCar() {
     super(CarType.PREMIUM);
-    specificConstruct();
   }
 
   @Override

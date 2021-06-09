@@ -9,66 +9,6 @@ public class Person {
   private String phone;
   private String address;
 
-  // Avoid complex constructor
-  /*public Person(
-      String name, String email, Integer age, Integer children, String phone, String address) {
-    super();
-    this.name = name;
-    this.email = email;
-    this.age = age;
-    this.children = children;
-    this.phone = phone;
-    this.address = address;
-  }*/
-
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(String email) {
-    this.email = email;
-  }
-
-  public Integer getAge() {
-    return age;
-  }
-
-  public void setAge(Integer age) {
-    this.age = age;
-  }
-
-  public Integer getChildren() {
-    return children;
-  }
-
-  public void setChildren(Integer children) {
-    this.children = children;
-  }
-
-  public String getPhone() {
-    return phone;
-  }
-
-  public void setPhone(String phone) {
-    this.phone = phone;
-  }
-
-  public String getAddress() {
-    return address;
-  }
-
-  public void setAddress(String address) {
-    this.address = address;
-  }
-
   private Person(PersonBuilder personBuilder) {
     super();
     this.name = personBuilder.name;
@@ -119,5 +59,53 @@ public class Person {
     public Person build() {
       return new Person(this);
     }
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  public Integer getAge() {
+    return age;
+  }
+
+  public void setAge(Integer age) {
+    this.age = age;
+  }
+
+  public Integer getChildren() {
+    return children;
+  }
+
+  public void setChildren(Integer children) {
+    this.children = children;
+  }
+
+  public String getPhone() {
+    return phone;
+  }
+
+  public void setPhone(String phone) {
+    this.phone = phone;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
   }
 }

@@ -4,7 +4,6 @@ public class CompactCar extends Car {
 
   public CompactCar() {
     super(CarType.COMPACT);
-    specificConstruct();
   }
 
   @Override

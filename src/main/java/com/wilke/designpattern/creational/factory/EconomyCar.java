@@ -4,7 +4,6 @@ public class EconomyCar extends Car {
 
   public EconomyCar() {
     super(CarType.ECONOMY);
-    specificConstruct();
   }
 
   @Override

@@ -7,6 +7,7 @@ public abstract class Car {
   public Car(CarType type) {
     super();
     this.type = type;
+    specificConstruct();
   }
 
   public CarType getType() {
