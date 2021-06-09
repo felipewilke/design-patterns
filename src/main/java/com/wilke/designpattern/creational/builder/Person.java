@@ -69,7 +69,7 @@ public class Person {
     this.address = address;
   }
 
-  public Person(PersonBuilder personBuilder) {
+  private Person(PersonBuilder personBuilder) {
     super();
     this.name = personBuilder.name;
     this.email = personBuilder.email;
